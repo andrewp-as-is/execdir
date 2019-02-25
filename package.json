@@ -1,0 +1,18 @@
+{
+  "name": "execdir",
+  "version": "2019.02.24",
+  "description": "run command from multiple directories",
+  "keywords": [
+    "execdir"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/execdir",
+  "license": "Unlicense",
+  "bin": {
+    ".execdir-add": "./scripts/.execdir-add",
+    ".execdir-get": "./scripts/.execdir-get",
+    ".execdir-rm": "./scripts/.execdir-rm",
+    ".execdir-run": "./scripts/.execdir-run",
+    ".execdir-set": "./scripts/.execdir-set",
+    "execdir": "./scripts/execdir"
+  }
+}

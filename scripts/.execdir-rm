@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) list [path ...]"
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME-$HOME/.config}"
+EXECDIR="${EXECDIR-$XDG_CONFIG_HOME/execdir}"
+! [ -d "$EXECDIR" ] && { mkdir -p "$EXECDIR" || exit; }
+
+path="$EXECDIR/$1".txt
+tmp=/tmp/$$.txt
+
+IFS=$'\n'
+echo "${*:2}" > "$tmp"
+
+! [ -e "$path" ] && exit
+dirs="$(cat "$path")" || exit
+echo "$dirs" | grep -v -x -f "$tmp" | sort -u > "$path"

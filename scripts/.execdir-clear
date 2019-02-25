@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) list ..."
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME-$HOME/.config}"
+EXECDIR="${EXECDIR-$XDG_CONFIG_HOME/execdir}"
+! [ -d "$EXECDIR" ] && { mkdir -p "$EXECDIR" || exit; }
+
+while [[ $# != 0 ]]; do
+    path="$EXECDIR/$1".txt
+    [ -e "$path" ] && { rm "$path" || exit; }
+    shift
+done;:

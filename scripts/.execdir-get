@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    echo "usage: $(basename $0) [list ...]"
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage
+
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME-$HOME/.config}"
+EXECDIR="${EXECDIR-$XDG_CONFIG_HOME/execdir}"
+! [ -d "$EXECDIR" ] && { mkdir -p "$EXECDIR" || exit; }
+
+dirs="$(while [[ $# != 0 ]]; do
+    path="$EXECDIR/$1".txt
+    ! [ -e "$path" ] && echo "ERROR: $path NOT EXISTS" && exit 1
+    cat "$path" || exit
+    shift
+done)" || exit
+echo "$dirs" | sort -u
