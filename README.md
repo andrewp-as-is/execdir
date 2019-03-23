@@ -1,11 +1,13 @@
+<!--
+https://pypi.org/project/readme-generator/
+-->
+
 [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/execdir.svg?maxAge=3600)](https://pypi.org/project/execdir/)
 [![](https://img.shields.io/npm/v/execdir.svg?maxAge=3600)](https://www.npmjs.com/package/execdir)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/execdir.svg?branch=master)](https://travis-ci.org/looking-for-a-job/execdir/)
 
-<b>run command from multiple directories</b>
-
-#### Install
+#### Installation
 ```bash
 $ [sudo] npm i -g execdir
 ```
@@ -55,4 +57,6 @@ $ execdir run pypi python setup.py sdist upload
 $ execdir run npmjs npm publish
 ```
 
-<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+<p align="center">
+    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+</p>

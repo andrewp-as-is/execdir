@@ -1,6 +1,6 @@
 {
   "name": "execdir",
-  "version": "2019.02.24",
+  "version": "2019.3.22",
   "description": "run command from multiple directories",
   "keywords": [
     "execdir"
@@ -9,6 +9,7 @@
   "license": "Unlicense",
   "bin": {
     ".execdir-add": "./scripts/.execdir-add",
+    ".execdir-clear": "./scripts/.execdir-clear",
     ".execdir-get": "./scripts/.execdir-get",
     ".execdir-rm": "./scripts/.execdir-rm",
     ".execdir-run": "./scripts/.execdir-run",
