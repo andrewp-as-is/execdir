@@ -1,6 +1,6 @@
 {
   "name": "execdir",
-  "version": "2019.3.22",
+  "version": "2019.4.13",
   "description": "run command from multiple directories",
   "keywords": [
     "execdir"

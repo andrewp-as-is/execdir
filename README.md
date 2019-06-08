@@ -1,5 +1,6 @@
 <!--
 https://pypi.org/project/readme-generator/
+https://pypi.org/project/python-readme-generator/
 -->
 
 [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
@@ -26,7 +27,7 @@ $ [sudo] pip install execdir
 $ export EXECDIR=~/Library/execdir
 ```
 
-#### CLI
+#### Scripts usage
 ```bash
 usage: execdir command [args]
 
@@ -58,5 +59,5 @@ $ execdir run npmjs npm publish
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
 </p>
