@@ -1,19 +1,21 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
+
+
 
 [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/execdir.svg?maxAge=3600)](https://pypi.org/project/execdir/)
-[![](https://img.shields.io/npm/v/execdir.svg?maxAge=3600)](https://www.npmjs.com/package/execdir)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/execdir.svg?branch=master)](https://travis-ci.org/looking-for-a-job/execdir/)
+[![](https://img.shields.io/npm/v/execdir.svg?maxAge=3600)](https://www.npmjs.com/package/execdir)[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/execdir/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/execdir/actions)
 
-#### Installation
-```bash
-$ [sudo] npm i -g execdir
-```
+### Installation
 ```bash
 $ [sudo] pip install execdir
+```
+
+```bash
+$ [sudo] npm i -g execdir
 ```
 
 #### How it works
@@ -25,21 +27,6 @@ $ [sudo] pip install execdir
 
 ```bash
 $ export EXECDIR=~/Library/execdir
-```
-
-#### Scripts usage
-```bash
-usage: execdir command [args]
-
-Available commands:
-    add                     add directories to list
-    clear                   clear list
-    get                     print list(s) directories
-    set                     set list directories
-    run                     run command from list directories
-    rm                      remove directories from list
-
-run `execdir COMMAND --help` for more infos
 ```
 
 #### Examples
@@ -59,5 +46,5 @@ $ execdir run npmjs npm publish
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>

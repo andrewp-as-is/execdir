@@ -3,10 +3,10 @@
 
 usage() {
     echo "usage: $(basename $0) [-v] list args ..."
-    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+    [ "$1" = "-h" ] || [ "$1" = "--help" ]; exit
 }
 
-[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+[ "$1" = "-h" ] || [ "$1" = "--help" ] && usage "$@"
 
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME-$HOME/.config}"
 EXECDIR="${EXECDIR-$XDG_CONFIG_HOME/execdir}"
